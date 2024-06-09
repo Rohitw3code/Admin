@@ -9,6 +9,10 @@ import {
   Routes,
 } from "react-router-dom";
 import AdminLogin from "./Admin/AdminLogin";
+import Student from "./Admin/Student"
+import StudentDetail from "./Admin/StudentDetail"
+import Admin from "./Admin/Admin"
+
 
 
 function App() {
@@ -16,14 +20,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<AdminLogin />} />
-          {/* <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dash />} />
-          <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/student" element={<Student />} />
-          <Route path="/home" element={<Dashome/>}/>
-          <Route path="/student-details/:studentId/:name/:email" element={<StudentDetail />} /> */}
+          <Route path="/student-details/:studentId/:name/:email" element={<StudentDetail />} />
         </Routes>
       </Router>
   </>
